@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D78BC4FE-5F0D-4B26-B7D3-2C3A0523A8B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HRMnPRM.Plug.Service</RootNamespace>
+    <AssemblyName>HRMnPRM.Plug.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\ApplicationModuleService.cs" />
+    <Compile Include="Admin\ApplicationService.cs" />
+    <Compile Include="Admin\ApplicationSettingService.cs" />
+    <Compile Include="Admin\CommonSettingService.cs" />
+    <Compile Include="Admin\EmailAccountService.cs" />
+    <Compile Include="Admin\EmailSender.cs" />
+    <Compile Include="Admin\MenuService.cs" />
+    <Compile Include="Admin\ProfileService.cs" />
+    <Compile Include="Admin\RoleService.cs" />
+    <Compile Include="Admin\UserMenuPermissionService.cs" />
+    <Compile Include="Admin\UserService.cs" />
+    <Compile Include="Helpers\DbInitializerHelper.cs" />
+    <Compile Include="IGeneric.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HRM\" />
+    <Folder Include="PRM\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HRMnPRM.Plug.Core\HRMnPRM.Plug.Core.csproj">
+      <Project>{a4f508ba-2a54-45ef-95b8-0f4356a7efc7}</Project>
+      <Name>HRMnPRM.Plug.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HRMnPRM.Plug.Data\HRMnPRM.Plug.Data.csproj">
+      <Project>{45dd3421-40a1-40c9-9983-b7b6fdb462b4}</Project>
+      <Name>HRMnPRM.Plug.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HRMnPRM.Plug.Domain\HRMnPRM.Plug.Domain.csproj">
+      <Project>{81443b48-3d18-49ec-8773-7bfb7086f1c2}</Project>
+      <Name>HRMnPRM.Plug.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HRMnPRM.Plug.ViewModel\HRMnPRM.Plug.ViewModel.csproj">
+      <Project>{e1d375d9-488d-402b-a1f4-049a3c098a06}</Project>
+      <Name>HRMnPRM.Plug.ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

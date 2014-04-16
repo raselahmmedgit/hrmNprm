@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMnPRM.Plug.Core", "HRMnPRM.Plug.Core\HRMnPRM.Plug.Core.csproj", "{A4F508BA-2A54-45EF-95B8-0F4356A7EFC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMnPRM.Plug.Data", "HRMnPRM.Plug.Data\HRMnPRM.Plug.Data.csproj", "{45DD3421-40A1-40C9-9983-B7B6FDB462B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMnPRM.Plug.Domain", "HRMnPRM.Plug.Domain\HRMnPRM.Plug.Domain.csproj", "{81443B48-3D18-49EC-8773-7BFB7086F1C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMnPRM.Plug.Service", "HRMnPRM.Plug.Service\HRMnPRM.Plug.Service.csproj", "{D78BC4FE-5F0D-4B26-B7D3-2C3A0523A8B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMnPRM.Plug.Web", "HRMnPRM.Plug.Web\HRMnPRM.Plug.Web.csproj", "{ED4D7664-4866-4319-9F97-27DBD02BA81A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMnPRM.Plug.Web.Tests", "HRMnPRM.Plug.Web.Tests\HRMnPRM.Plug.Web.Tests.csproj", "{7C300DCB-8122-4928-A83A-C753FE2B6D12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMnPRM.Plug.ViewModel", "HRMnPRM.Plug.ViewModel\HRMnPRM.Plug.ViewModel.csproj", "{E1D375D9-488D-402B-A1F4-049A3C098A06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4F508BA-2A54-45EF-95B8-0F4356A7EFC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4F508BA-2A54-45EF-95B8-0F4356A7EFC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4F508BA-2A54-45EF-95B8-0F4356A7EFC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4F508BA-2A54-45EF-95B8-0F4356A7EFC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45DD3421-40A1-40C9-9983-B7B6FDB462B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45DD3421-40A1-40C9-9983-B7B6FDB462B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45DD3421-40A1-40C9-9983-B7B6FDB462B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45DD3421-40A1-40C9-9983-B7B6FDB462B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81443B48-3D18-49EC-8773-7BFB7086F1C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81443B48-3D18-49EC-8773-7BFB7086F1C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81443B48-3D18-49EC-8773-7BFB7086F1C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81443B48-3D18-49EC-8773-7BFB7086F1C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D78BC4FE-5F0D-4B26-B7D3-2C3A0523A8B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D78BC4FE-5F0D-4B26-B7D3-2C3A0523A8B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D78BC4FE-5F0D-4B26-B7D3-2C3A0523A8B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D78BC4FE-5F0D-4B26-B7D3-2C3A0523A8B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED4D7664-4866-4319-9F97-27DBD02BA81A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED4D7664-4866-4319-9F97-27DBD02BA81A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED4D7664-4866-4319-9F97-27DBD02BA81A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED4D7664-4866-4319-9F97-27DBD02BA81A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C300DCB-8122-4928-A83A-C753FE2B6D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C300DCB-8122-4928-A83A-C753FE2B6D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C300DCB-8122-4928-A83A-C753FE2B6D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C300DCB-8122-4928-A83A-C753FE2B6D12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1D375D9-488D-402B-A1F4-049A3C098A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1D375D9-488D-402B-A1F4-049A3C098A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1D375D9-488D-402B-A1F4-049A3C098A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1D375D9-488D-402B-A1F4-049A3C098A06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
